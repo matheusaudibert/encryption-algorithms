@@ -4,7 +4,7 @@ from src.cifra_de_vigenere import cifra_de_vigenere
 
 st.title("🔑 Algoritmos de Criptografia")
 
-tab_cesar, tab_vigenere, tab_frequencia_vigenere = st.tabs(["Cifra de César", "Cifra de Vigenère", "Análise de Frequência com Vigenère"])
+tab_cesar, tab_vigenere = st.tabs(["Cifra de César", "Cifra de Vigenère"])
 
 with tab_cesar:
   st.title("Cifra de César")
@@ -27,8 +27,7 @@ with tab_vigenere:
   if st.button("Cifrar", key="cifra_de_vigenere"):
      texto_cifrado_vigenere = cifra_de_vigenere(texto_vigenere, chave)
      st.write("Texto cifrado:", texto_cifrado_vigenere)
-    
-with tab_frequencia_vigenere:
+
   
   
   
